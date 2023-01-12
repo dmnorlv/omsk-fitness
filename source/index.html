@@ -19,11 +19,44 @@
   </head>
   <body>
     <div class="wrapper">
-      <header class="header">
+      <header class="header page-header container">
+        <div class="page-header__wrapper content-wrapper">
+          <nav class="page-header__nav">
+            <a class="page-header__logo-link">
+              <svg class="page-header__logo-icon" width="119" height="23">
+                <use xlink:href="img/sprite.svg#logo"></use>
+              </svg>
+            </a>
+            <ul class="page-header__nav-list">
+              <li class="page-header__nav-list-item">
+                <a class="page-header__nav-link" href="tel:88005555555">8-800-555-55-55</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="page-header__content">
+            <div class="page-header__content-info">
+              <p>омск</p>
+              <h1>ФИТНЕС<br>ЦЕНТР</h1>
+              <ul class="page-header__content-info-products">
+                <li>Тренажёрный зал</li>
+                <li>Групповые занятия</li>
+                <li>Кардио-зона</li>
+              </ul>
+              <a class="page-header__content-info-btn" href="#subscription">Купить абонемент</a>
+            </div>
+            <div class="page-header__content-img-container">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/desktop/superman-1x.webp 1x, img/desktop/superman-2x.webp 2x">
+                <source media="(min-width: 768px)" srcset="img/tablet/superman-1x.webp 1x, img/tablet/superman-2x.webp 2x">
+                <img src="img/desktop/superman-1x.jpg" srcset="img/desktop/superman-2x.jpg 2x" width="500" height="556" alt="Супермен." loading="lazy">
+              </picture>
+            </div>
+          </div>
+        </div>
       </header>
       <main>
       </main>
-      <footer class="footer">
+      <footer class="footer page-footer">
       </footer>
     </div>
     <script src="js/vendor.min.js"></script>
