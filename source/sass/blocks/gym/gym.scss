@@ -1,0 +1,147 @@
+.gym {
+  padding-top: 120px;
+  padding-bottom: 235px;
+
+  @include vp-1199 {
+    padding-top: 100px;
+    padding-bottom: 183px;
+  }
+}
+
+.gym__wrapper {
+  display: flex;
+}
+
+.gym__text {
+  max-width: 380px;
+  width: percentage(calc(380 / $content-width-dp));
+  margin-left: auto;
+  margin-top: 38px;
+  padding-right: 25px;
+}
+
+.gym__text h2 {
+  margin: 0;
+  font-family: $ff-alumni-sans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 58px;
+  letter-spacing: 0.03em;
+  margin-bottom: 7px;
+}
+
+.gym__text p {
+  margin: 0;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 150%;
+  margin-bottom: 7px;
+}
+
+.gym__text p:first-of-type {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  margin-bottom: 40px;
+}
+
+.gym__text p:last-of-type {
+  margin-bottom: 0;
+
+  @include vp-1199 {
+    display: none;
+  }
+}
+
+.gym__media {
+  position: relative;
+  max-width: 660px;
+  width: percentage(calc(660 / $content-width-dp));
+  margin-left: auto;
+}
+
+.gym__photo img {
+  width: 100%;
+  height: auto;
+}
+
+.gym__video {
+  position: absolute;
+  top: 287px;
+  left: -63px;
+  z-index: 1;
+  max-width: 364px;
+  max-height: 228px;
+  width: percentage(calc(364 / 660));
+  height: calc(228 / 1366) * 100vw;
+}
+
+.gym__video__container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+.gym__video-background {
+  display: none;
+  background-color: rgba(20, 54, 122, 0.5);
+}
+
+.gym__video-background-js {
+  display: inline;
+}
+
+.gym__video-button {
+  display: none;
+  position: relative;
+  background-color: transparent;
+  margin: auto;
+  width: 100px;
+  height: 100px;
+}
+
+.gym__video-button-js {
+  display: block;
+}
+
+.gym__video-button::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  border: solid 2px;
+  border-image: linear-gradient(to bottom, #3acfd5 0%, #3a4ed5 100%);
+}
+
+.gym__play-icon {
+  margin: auto;
+}
+
+.gym__video-button:hover .gym__icon-border,
+.gym__video-button:focus .gym__icon-border {
+  stroke: $color-paris-daisy;
+  stroke-opacity: 1;
+}
+
+.gym__video-button:hover .gym__icon-play,
+.gym__video-button:focus .gym__icon-play {
+  fill: $color-paris-daisy;
+}
+
+
+.gym__video-button:active {
+  opacity: 0.7;
+}
+
+.gym__iframe {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+.gym__iframe-js {
+  display: none;
+}
