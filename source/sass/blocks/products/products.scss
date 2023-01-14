@@ -1,0 +1,12 @@
+.products {
+  padding-top: 120px;
+  padding-bottom: 120px;
+  padding-left: 35px;
+  padding-right: 35px;
+}
+
+.products__list {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(260, 1fr));
+  gap: 40px;
+}
