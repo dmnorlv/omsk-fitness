@@ -1,7 +1,7 @@
 import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
-import { initVideo } from './modules/gym-video';
-import { initTabs } from './modules/products-tabs';
+import {initVideo} from './modules/gym-video';
+import {initTabs} from './modules/products-tabs';
 
 // ---------------------------------
 
