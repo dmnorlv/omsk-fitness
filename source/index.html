@@ -120,11 +120,11 @@
       </section>
       <section class="products" id="products">
         <picture>
-
-          <img class="products__decor-img" src="img/decor/products-decor-1x.png" srcset="img/decor/products-decor-2x.png 2x" loading="lazy" width="214" height="386" alt="Блины металлические.">
+          <source media="(min-width: 1200px)" srcset="img/decor/products-decor-desktop-1x.png 1x, img/decor/products-decor-desktop-2x.png 2x">
+          <source media="(min-width: 768px)" srcset="img/decor/products-decor-tablet-1x.png 1x, img/decor/products-decor-tablet-2x.png 2x">
+          <img class="products__decor-img" src="img/decor/products-decor-desktop-1x.png" srcset="img/decor/products-decor-desktop-2x.png 2x" loading="lazy" width="287" height="494" alt="Блины металлические.">
         </picture>
-        <div class="products__wrapper">
-          <div class="content-wrapper products__content-container">
+          <div class="content-wrapper products__wrapper">
 
           <h2>Абонементы</h2>
 
@@ -147,7 +147,9 @@
                 <a class="products__item" href="#" data-price="5000">
                 <h3>С тренером</h3>
                 <p>12 занятий</p>
-                <div><span>5000</span>₽</div>
+                <div><span>5000</span><svg class="products__ruble" width="30" height="42">
+                  <use xlink:href="img/sprite.svg#ruble"></use>
+                </svg></div>
                 <div class="products__item-link">Купить абонемент</div>
               </a>
               </li>
@@ -155,7 +157,9 @@
                 <a class="products__item" href="#" data-price="1700">
                 <h3>Дневной</h3>
                 <p>с&nbsp;8:00 до&nbsp;17:00</p>
-                <div><span>1700</span>₽</div>
+                <div><span>1700</span><svg class="products__ruble" width="30" height="42">
+                  <use xlink:href="img/sprite.svg#ruble"></use>
+                </svg></div>
 
                 <div class="products__item-link">Купить абонемент</div>
               </a>
@@ -164,7 +168,9 @@
                 <a class="products__item" href="#" data-price="2700">
                 <h3>Полный день</h3>
                 <p>с&nbsp;8:00 до&nbsp;22:00</p>
-                <div><span>2700</span>₽</div>
+                <div><span>2700</span><svg class="products__ruble" width="30" height="42">
+                  <use xlink:href="img/sprite.svg#ruble"></use>
+                </svg></div>
                 <div class="products__item-link">Купить абонемент</div>
               </a>
               </li>
@@ -174,7 +180,9 @@
                 <a class="products__item" href="#" data-price="14000">
                 <h3>С тренером</h3>
                 <p>50 занятий</p>
-                <div><span>14000</span>₽</div>
+                <div><span>14000</span><svg class="products__ruble" width="30" height="42">
+                  <use xlink:href="img/sprite.svg#ruble"></use>
+                </svg></div>
                 <div class="products__item-link" href="#">Купить абонемент</div>
               </a>
               </li>
@@ -182,7 +190,9 @@
                 <a class="products__item" href="#" data-price="8000">
                 <h3>Дневной</h3>
                 <p>с&nbsp;8:00 до&nbsp;17:00</p>
-                <div><span>8000</span>₽</div>
+                <div><span>8000</span><svg class="products__ruble" width="30" height="42">
+                  <use xlink:href="img/sprite.svg#ruble"></use>
+                </svg></div>
                 <div class="products__item-link" href="#">Купить абонемент</div>
               </a>
               </li>
@@ -190,7 +200,9 @@
                 <a class="products__item" href="#" data-price="10000">
                 <h3>Полный день</h3>
                 <p>с&nbsp;8:00 до&nbsp;22:00</p>
-                <div><span>2700</span>₽</div>
+                <div><span>2700</span><svg class="products__ruble" width="30" height="42">
+                  <use xlink:href="img/sprite.svg#ruble"></use>
+                </svg></div>
                 <div class="products__item-link" href="#">Купить абонемент</div>
               </a>
               </li>
@@ -200,7 +212,9 @@
                 <a class="products__item" href="#" data-price="18000">
                 <h3>С тренером</h3>
                 <p>100 занятий</p>
-                <div><span>18000</span>₽</div>
+                <div><span>18000</span><svg class="products__ruble" width="30" height="42">
+                  <use xlink:href="img/sprite.svg#ruble"></use>
+                </svg></div>
                 <div class="products__item-link" href="#">Купить абонемент</div>
               </a>
               </li>
@@ -208,7 +222,9 @@
                 <a class="products__item" href="#" data-price="10000">
                 <h3>Дневной</h3>
                 <p>с&nbsp;8:00 до&nbsp;17:00</p>
-                <div><span>10000</span>₽</div>
+                <div><span>10000</span><svg class="products__ruble" width="30" height="42">
+                  <use xlink:href="img/sprite.svg#ruble"></use>
+                </svg></div>
                 <div class="products__item-link" href="#">Купить абонемент</div>
               </a>
               </li>
@@ -216,14 +232,16 @@
                 <a class="products__item" href="#" data-price="12000">
                 <h3>Полный день</h3>
                 <p>с&nbsp;8:00 до&nbsp;22:00</p>
-                <div><span>12000</span>₽</div>
+                <div><span>12000</span><svg class="products__ruble" width="30" height="42">
+                  <use xlink:href="img/sprite.svg#ruble"></use>
+                </svg></div>
                 <div class="products__item-link" href="#">Купить абонемент</div>
               </a>
               </li>
             </ul>
           </div>
         </div>
-        </div>
+        <!-- </div> -->
       </section>
       <section class="promo content-container">
         <div class="promo__info">

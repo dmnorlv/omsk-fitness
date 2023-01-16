@@ -1,4 +1,4 @@
-const productsContainer = document.querySelector('.products__content-container');
+const productsContainer = document.querySelector('.products__wrapper');
 const tabsList = document.querySelector('.products__tabs');
 const tabs = document.querySelectorAll('.products__tab-btn');
 const subscriptionProducts = document.querySelectorAll('.products__list');
@@ -31,7 +31,7 @@ const setCurrentList = (string) => {
 
 const initTabs = () => {
   if (productsContainer && tabs && tabs && subscriptionProducts) {
-    productsContainer.classList.add('products__content-container-js');
+    productsContainer.classList.add('products__wrapper-js');
     tabsList.classList.add('products__tabs-js');
     tabs.forEach((button) => {
       button.classList.add('products__tab-btn-js');
