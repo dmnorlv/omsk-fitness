@@ -71,6 +71,11 @@
   top: 6.6%;
   left: 50%;
   transform: translateX(-50%);
+
+  @include vp-1199 {
+    top: 2%;
+    height: 66.6%;
+  }
 }
 
 .products__tabs-js {
@@ -233,10 +238,6 @@
   line-height: 40px;
   color: $color-sapphire;
   margin-bottom: 5px;
-
-  @include vp-1199 {
-
-  }
 }
 
 .products__item p {
