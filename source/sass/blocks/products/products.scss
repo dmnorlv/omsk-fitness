@@ -6,6 +6,13 @@
   padding-left: 35px;
   padding-right: 35px;
   background-color: $color-ghost-white;
+
+  @include vp-1199 {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    padding-left: 163px;
+    padding-right: 163px;
+  }
 }
 
 .products__decor-img {
@@ -13,6 +20,12 @@
   z-index: 0;
   bottom: -147px;
   right: 0;
+
+  @include vp-1199 {
+    width: 347px;
+    height: 444px;
+    bottom: -125px;
+  }
 }
 
 .products__wrapper {
@@ -31,10 +44,19 @@
   letter-spacing: 0.03em;
   margin-bottom: 97px;
   margin-right: 9px;
+
+  @include vp-1199 {
+    font-size: 42px;
+    line-height: 50px;
+  }
 }
 
 .products__wrapper-js h2 {
   margin-bottom: 10px;
+
+  @include vp-1199 {
+    margin-bottom: 15px;
+  }
 }
 
 .products__tabs {
@@ -45,8 +67,8 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: percentage(calc(520 / 798));
-  top: percentage(calc(104 / 798));
+  height: 65.6%;
+  top: 6.6%;
   left: 50%;
   transform: translateX(-50%);
 }
@@ -62,6 +84,11 @@
   margin-bottom: 39px;
   max-width: 341px;
   gap: 46px;
+
+  @include vp-1199 {
+    gap: 54px;
+    margin-bottom: 42px;
+  }
 }
 
 .products__tabs-js::after {
@@ -81,6 +108,10 @@
   cursor: default;
   font-size: 20px;
   line-height: 150%;
+
+  @include vp-1199 {
+    font-size: 18px;
+  }
 }
 
 .products__tab-btn-js {
@@ -136,6 +167,10 @@
   grid-template-columns: repeat(3, minmax(270px, 1fr));
   gap: 40px;
   width: 100%;
+
+  @include vp-1199 {
+    grid-template-columns: auto;
+  }
 }
 
 .products__list-js {
@@ -154,6 +189,11 @@
   padding-bottom: 60px;
   min-height: 448px;
   border: 7px solid $color-default-white;
+
+  @include vp-1199 {
+    max-width: 690px;
+    margin: 0 auto;
+  }
 }
 
 .products__item:hover,
@@ -193,6 +233,10 @@
   line-height: 40px;
   color: $color-sapphire;
   margin-bottom: 5px;
+
+  @include vp-1199 {
+
+  }
 }
 
 .products__item p {
@@ -232,6 +276,10 @@
   user-select: none;
   text-transform: uppercase;
   letter-spacing: 0.05em;
+
+  @include vp-1199 {
+    width: percentage(calc(206 / 442));
+  }
 }
 
 .products__item:hover .products__item-link,
