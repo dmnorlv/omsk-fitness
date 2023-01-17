@@ -8,12 +8,13 @@
   display: flex;
 
   @include vp-1199 {
-    flex-direction: column;
+    min-width: 678px;
     padding-top: 100px;
     padding-bottom: 100px;
   }
 
   @include vp-767 {
+    flex-direction: column;
     padding-top: 70px;
     padding-bottom: 70px;
   }
@@ -25,6 +26,13 @@
   background-color: $color-torch-red-1;
   color: $color-default-white;
   width: percentage(calc(500 / $content-width-dp));
+
+  @include vp-1199 {
+    padding-top: 5px;
+    width: percentage(calc(292 / $content-width-tb));
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .promo__info {
@@ -32,6 +40,11 @@
   flex-direction: column;
   max-width: 343px;
   margin: 0 auto;
+
+  @include vp-1199 {
+    width: percentage(calc(210 / 292));
+    margin: auto;
+  }
 }
 
 .promo__info > p {
@@ -39,12 +52,22 @@
   font-size: 18px;
   line-height: 150%;
   margin-bottom: 47px;
+
+  @include vp-1199 {
+    font-size: 12px;
+    margin-bottom: 30px;
+  }
 }
 
 .promo__text {
   display: flex;
   padding-left: 12px;
   margin-bottom: 25px;
+
+  @include vp-1199 {
+    margin-bottom: 10px;
+    padding-left: 5px;
+  }
 }
 
 .promo__text h2 {
@@ -55,6 +78,11 @@
   line-height: 96%;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+
+  @include vp-1199 {
+    font-size: 48px;
+    text-align: center;
+  }
 }
 
 .promo__date-wrapper {
@@ -69,18 +97,31 @@
   grid-template-rows: max-content max-content;
   row-gap: 5px;
   margin-bottom: 28px;
+
+  @include vp-1199 {
+    margin-bottom: 9px;
+  }
 }
 
 .promo__date > span:first-child,
 .promo__time > span:first-child {
   font-size: 18px;
   line-height: 18px;
+
+  @include vp-1199 {
+    font-size: 12px;
+    line-height: 12px;
+  }
 }
 
 .promo__date > span:first-child {
   position: relative;
   grid-column: 1/3;
   margin-bottom: 13px;
+
+  @include vp-1199 {
+    margin-bottom: 5px;
+  }
 }
 
 .promo__date > span:first-child::after,
@@ -92,6 +133,10 @@
   bottom: -10px;
   left: 0;
   background-color: $color-default-white;
+
+  @include vp-1199 {
+    bottom: -5px;
+  }
 }
 
 .promo__date > span:first-child + span,
@@ -99,6 +144,11 @@
   font-weight: 700;
   font-size: 40px;
   line-height: 28px;
+
+  @include vp-1199 {
+    font-size: 24px;
+    line-height: 18px;
+  }
 }
 
 .promo__date > span:first-child + span {
@@ -114,6 +164,12 @@
   flex-direction: column;
   margin-left: 6px;
   margin-top: -2px;
+
+  @include vp-1199 {
+    font-size: 10px;
+    line-height: 12px;
+    margin-left: 3px;
+  }
 }
 
 .promo__time {
@@ -124,6 +180,10 @@
 .promo__time > span:first-child {
   position: relative;
   margin-bottom: 20px;
+
+  @include vp-1199 {
+    margin-bottom: 9px;
+  }
 }
 
 .promo__link {
@@ -139,6 +199,14 @@
   padding-top: 23px;
   padding-bottom: 24px;
   user-select: none;
+
+  @include vp-1199 {
+    font-size: 10px;
+    line-height: 12px;
+    border-width: 2px;
+    padding-top: 13px;
+    padding-bottom: 12px;
+  }
 }
 
 .promo__link:hover,
@@ -159,6 +227,10 @@
 
 .promo__photo {
   width: percentage(calc(660 / $content-width-dp));
+
+  @include vp-1199 {
+    width: percentage(calc(386 / $content-width-tb));
+  }
 }
 
 .promo__photo img {
