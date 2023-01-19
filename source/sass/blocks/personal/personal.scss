@@ -1,0 +1,50 @@
+.personal {
+
+}
+
+.personal__list {
+  max-width: 1160px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.personal__swiper-slide {
+  position: relative;
+  overflow-y: auto;
+  padding: 5px;
+  color: $color-default-white;
+  display: flex;
+  flex-direction: column;
+  height: 294px;
+}
+
+.personal__swiper-slide > h3 {
+  order: 1;
+}
+
+.personal__swiper-slide:hover {
+  background-color: rgba(16, 38, 84, 0.89);
+  box-shadow: 0 0 35px rgba(42, 59, 99, 0.17);
+}
+
+.personal__slide-background {
+  background-color: $color-sapphire;
+}
+
+.personal__button-prev,
+.personal__button-next {
+  position: absolute;
+  top: 0;
+}
+
+.personal__button-prev {
+  left: -50px;
+}
+
+.personal__button-next {
+  right: -50px;
+}
+
+.personal__button-next svg {
+  rotate: 180deg;
+}
