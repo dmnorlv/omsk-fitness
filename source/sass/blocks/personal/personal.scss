@@ -4,7 +4,10 @@
 
   @include vp-1199 {
     padding-top: 0;
-    // padding-right: 0;
+  }
+
+  @include vp-767 {
+    padding-top: 15px;
   }
 }
 
@@ -25,6 +28,12 @@
     text-align: center;
     margin-bottom: 33px;
   }
+
+  @include vp-767 {
+    font-size: 32px;
+    line-height: 38px;
+    margin-bottom: 40px;
+  }
 }
 
 .personal__list {
@@ -34,7 +43,10 @@
 
   @include vp-1199 {
     width: percentage(calc(566 / $content-width-tb));
-    // height: calc(294 / 768) * 100vw;
+  }
+
+  @include vp-767 {
+    width: percentage(calc(226 / $content-width-ml));
   }
 }
 
@@ -45,6 +57,10 @@
   max-width: 175px;
   font-size: 14px;
   line-height: 21px;
+
+  @include vp-767 {
+    padding-left: 21px;
+  }
 }
 
 .personal__trainer-list li {
@@ -76,6 +92,11 @@
 
   @include vp-1199 {
     height: calc(294 / 768) * 100vw;
+  }
+
+  @include vp-767 {
+    height: calc(274 / 320) * 100vw;
+    padding-top: 46px;
   }
 }
 
@@ -119,6 +140,10 @@
 
 .personal__swiper-slide:hover p {
   margin-bottom: 34px;
+
+  @include vp-767 {
+    margin-bottom: 36px;
+  }
 }
 
 .personal__slide-background {
@@ -135,6 +160,10 @@
   transform: translateY(-50%);
   cursor: pointer;
   border-radius: 4px;
+
+  @include vp-767 {
+    width: 30px;
+  }
 }
 
 .personal__button-prev:hover,
@@ -165,10 +194,18 @@
 
 .personal__button-prev {
   left: -67px;
+
+  @include vp-767 {
+    left: -42px;
+  }
 }
 
 .personal__button-next {
   right: -67px;
+
+  @include vp-767 {
+    right: -42px;
+  }
 }
 
 .personal__button-next svg {
@@ -179,4 +216,9 @@
   margin: auto;
   fill: none;
   stroke: #afafaf;
+
+  @include vp-767 {
+    width: 10px;
+    height: 19px;
+  }
 }

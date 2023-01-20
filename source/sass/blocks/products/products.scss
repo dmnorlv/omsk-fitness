@@ -249,17 +249,9 @@
 }
 
 .products__item:hover,
-.products__item:focus {
+.products__item:focus-within {
   border-image: linear-gradient(135deg, #ed0233, #003eb7);
   border-image-slice: 1;
-}
-
-.products__item:focus {
-  outline: none;
-}
-
-.products__item:active {
-  opacity: 0.7;
 }
 
 .products__item::after {
@@ -365,15 +357,27 @@
   }
 }
 
-.products__item:hover .products__item-link,
-.products__item:focus .products__item-link {
+.products__item:hover .products__item-link {
   outline: none;
   color: $color-default-white;
   background: linear-gradient(97.05deg, #ed0233 17.6%, #003eb7 95.31%);
 }
 
-.products__item:active .products__item-link {
+.products__item:hover .products__item-link:hover,
+.products__item:hover .products__item-link:focus {
   color: $color-paris-daisy;
+}
+
+.products__item-link:focus {
+  border-color: #003eb7;
+  text-decoration: underline;
+  outline: 2px solid $color-paris-daisy;
+  outline-offset: -4px;
+}
+
+.products__item-link:active {
+  text-decoration: none;
+  opacity: 0.7;
 }
 
 .products__ruble {

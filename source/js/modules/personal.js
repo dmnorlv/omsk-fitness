@@ -12,6 +12,7 @@ const initSlider = () => {
       rewind: true,
       spaceBetween: 40,
       slidesPerView: 1,
+      initialSlide: 2,
       navigation: {
         nextEl: '.personal__button-next',
         prevEl: '.personal__button-prev',
@@ -23,6 +24,7 @@ const initSlider = () => {
           initialSlide: 2,
         },
         1200: {
+          initialSlide: 0,
           slidesPerView: 4,
           spaceBetween: 40,
         },
