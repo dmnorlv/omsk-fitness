@@ -1,30 +1,117 @@
 .personal {
+  padding-top: 55px;
+  padding-bottom: 90px;
 
+  @include vp-1199 {
+    // padding-left: 0;
+    // padding-right: 0;
+  }
+}
+
+.personal h2 {
+  font-family: $ff-alumni-sans;
+  color: #102654;
+  letter-spacing: 0.03em;
+  font-weight: 600;
+  font-size: 54px;
+  line-height: 65px;
+  max-width: 1160px;
+  margin: 0 auto;
+  margin-bottom: 48px;
 }
 
 .personal__list {
   max-width: 1160px;
   margin: 0 auto;
   position: relative;
+
+  @include vp-1199 {
+    width: percentage(calc(566 / $content-width-tb));
+    // height: calc(294 / 768) * 100vw;
+  }
+}
+
+.personal__trainer-list {
+  padding-left: 25px;
+  margin: 0;
+  list-style-type: disc;
+  max-width: 175px;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.personal__trainer-list li {
+  position: relative;
+  padding-inline-start: 4px;
+}
+
+.personal__trainer-list li:not(:last-child) {
+  margin-bottom: 13px;
+}
+
+.personal__trainer-list li::marker {
+  position: absolute;
+  font-size: 15px;
+  width: 7px;
+  top: 0;
 }
 
 .personal__swiper-slide {
   position: relative;
   overflow-y: auto;
-  padding: 5px;
+  padding-top: 56px;
+  padding-bottom: 25px;
   color: $color-default-white;
   display: flex;
   flex-direction: column;
+  align-items: center;
   height: 294px;
+
+  @include vp-1199 {
+    height: calc(294 / 768) * 100vw;
+  }
 }
 
 .personal__swiper-slide > h3 {
   order: 1;
+  margin: 0;
+  margin-top: auto;
+  text-align: center;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 18px;
+}
+
+.personal__swiper-slide:hover > h3 {
+  order: 0;
+  margin: 0;
+  margin-bottom: 6px;
 }
 
 .personal__swiper-slide:hover {
   background-color: rgba(16, 38, 84, 0.89);
   box-shadow: 0 0 35px rgba(42, 59, 99, 0.17);
+}
+
+.personal__swiper-slide p,
+.personal__trainer-list {
+  display: none;
+  margin: 0;
+}
+
+.personal__swiper-slide p {
+  font-size: 16px;
+  line-height: 16px;
+  color: #b6bdcc;
+}
+
+.personal__swiper-slide:hover p,
+.personal__swiper-slide:hover ul {
+  display: block;
+}
+
+.personal__swiper-slide:hover p {
+  margin-bottom: 34px;
 }
 
 .personal__slide-background {
@@ -34,17 +121,55 @@
 .personal__button-prev,
 .personal__button-next {
   position: absolute;
-  top: 0;
+  height: 100%;
+  width: 40px;
+  display: flex;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.personal__button-prev:hover,
+.personal__button-next:hover,
+.personal__button-prev:focus,
+.personal__button-next:focus {
+  outline: none;
+  background-color: rgba(248, 249, 252, 1);
+  box-shadow: 0 2px 8px 2px rgba(34, 60, 80, 0.2);
+}
+
+.personal__button-prev:hover svg,
+.personal__button-next:hover svg,
+.personal__button-prev:focus svg,
+.personal__button-next:focus svg {
+  stroke-width: 2px;
+  stroke: #a8a8a8;
+}
+
+.personal__button-prev:active,
+.personal__button-next:active {
+  opacity: 0.7;
+}
+
+.personal__button-active {
+  opacity: 0.7;
 }
 
 .personal__button-prev {
-  left: -50px;
+  left: -67px;
 }
 
 .personal__button-next {
-  right: -50px;
+  right: -67px;
 }
 
 .personal__button-next svg {
   rotate: 180deg;
+}
+
+.personal__btn-icon {
+  margin: auto;
+  fill: none;
+  stroke: #afafaf;
 }

@@ -2,7 +2,7 @@ import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
 import {initVideo} from './modules/gym-video';
 import {initTabs} from './modules/products-tabs';
-import './modules/personal';
+import {initSlider} from './modules/personal';
 
 // ---------------------------------
 
@@ -22,7 +22,7 @@ window.addEventListener('DOMContentLoaded', () => {
     initModals();
     initVideo();
     initTabs();
-    // initSlider();
+    initSlider();
   });
 });
 
