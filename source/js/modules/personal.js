@@ -20,6 +20,7 @@ const initSlider = () => {
         768: {
           slidesPerView: 2,
           spaceBetween: 30,
+          initialSlide: 2,
         },
         1200: {
           slidesPerView: 4,
