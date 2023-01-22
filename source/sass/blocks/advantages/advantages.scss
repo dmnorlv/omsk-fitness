@@ -12,6 +12,12 @@
   padding-bottom: 91px;
   background-color: #f8f9fc;
   padding-right: 28px;
+
+  @include vp-1199 {
+    padding-top: 100px;
+    padding-left: 45px;
+    padding-right: 45px;
+  }
 }
 
 .advantages__wrapper h2 {
@@ -23,6 +29,13 @@
   letter-spacing: 0.03em;
   text-align: center;
   margin-bottom: 55px;
+
+  @include vp-1199 {
+    font-size: 42px;
+    line-height: 50px;
+    margin-bottom: 50px;
+    margin-right: 20px;
+  }
 }
 
 .advantages__list {
@@ -35,13 +48,23 @@
   grid-template-rows: 1fr 1fr;
   column-gap: 60px;
   row-gap: 159px;
-  min-height: 307px;
+
+  @include vp-1199 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 0;
+  }
 }
 
 .advantages__item {
   display: flex;
   column-gap: 30px;
   margin-top: -2px;
+
+  @include vp-1199 {
+    width: 47.81%;
+  }
 }
 
 .advantages__item--inventory {
@@ -56,6 +79,17 @@
   padding-top: 53px;
   align-items: center;
   text-align: center;
+
+  @include vp-1199 {
+    max-width: none;
+    width: 65.59%;
+    padding: 30px 120px;
+    padding-bottom: 37px;
+    margin-top: 45px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+  }
 }
 
 .advantages__description {
@@ -68,6 +102,10 @@
   display: flex;
   flex-direction: column;
   margin-top: -10px;
+
+  @include vp-1199 {
+    margin-top: -5px;
+  }
 }
 
 .advantages__description h3 {
@@ -75,12 +113,23 @@
   font-size: 22px;
   line-height: 24px;
   margin-bottom: 10px;
+
+  @include vp-1199 {
+    font-size: 20px;
+    line-height: 22px;
+    margin-bottom: 5px;
+  }
 }
 
 .advantages__description p {
   margin: 0;
   font-weight: 300;
   line-height: 22px;
+
+  @include vp-1199 {
+    font-size: 16px;
+    line-height: 22px;
+  }
 }
 
 .advantages__item--inventory h3 {
@@ -96,6 +145,12 @@
   font-size: 26px;
   line-height: 39px;
   margin-bottom: 32px;
+
+  @include vp-1199 {
+    font-size: 22px;
+    line-height: 33px;
+    margin-bottom: 15px;
+  }
 }
 
 .advantages__item--inventory p:last-of-type {
@@ -111,6 +166,11 @@
   background-image: linear-gradient(142.51deg, #d10a42 0%, #0041ca 87.33%);
   -webkit-text-fill-color: transparent;
   background-clip: text;
+
+  @include vp-1199 {
+    font-size: 58px;
+    line-height: 58px;
+  }
 }
 
 .advantages__value span:last-of-type {
@@ -126,4 +186,9 @@
   background-image: linear-gradient(127.61deg, #d10a42 0%, #0041ca 45.58%);
   -webkit-text-fill-color: transparent;
   background-clip: text;
+
+  @include vp-1199 {
+    font-size: 58px;
+    line-height: 58px;
+  }
 }
