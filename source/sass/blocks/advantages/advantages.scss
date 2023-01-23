@@ -95,6 +95,7 @@
 }
 
 .advantages__item--inventory {
+  position: relative;
   color: $color-default-white;
   grid-column: 2/3;
   grid-row: 1/3;
@@ -195,10 +196,6 @@
   font-size: 74px;
   line-height: 76px;
   color: #ffffff;
-
-  @include vp-767 {
-
-  }
 }
 
 .advantages__item--inventory p:first-of-type {
@@ -258,4 +255,29 @@
     font-size: 58px;
     line-height: 58px;
   }
+}
+
+.advantages__item--comfort,
+.advantages__item--experience {
+  position: relative;
+}
+
+
+.advantages__item--comfort::after,
+.advantages__item--experience::after {
+  position: absolute;
+  content: "";
+  width: 103%;
+  height: 2px;
+  background-color: rgba(209, 10, 66, 0.2);
+  top: -80px;
+
+  @include vp-1199 {
+    display: none;
+  }
+}
+
+.advantages__item--comfort::after {
+  width: 104.5%;
+  left: -15px;
 }
