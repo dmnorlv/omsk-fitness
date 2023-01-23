@@ -6,6 +6,10 @@
   @include vp-1199 {
     padding-left: 0;
   }
+
+  @include vp-767 {
+    padding-bottom: 18px;
+  }
 }
 
 .advantages__wrapper {
