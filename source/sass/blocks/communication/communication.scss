@@ -1,15 +1,45 @@
 .communication {
+  margin-top: 70px;
+
+  @media (min-width: 1366px) {
+    position: relative;
+    z-index: 2;
+    background-image: linear-gradient(90deg, #102654 50%, #ffffff 50%);
+  }
+
+  @include vp-1199 {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+
+  @include vp-767 {
+    margin-top: 20px;
+    margin-bottom: 68px;
+  }
+}
+
+.communication__wrapper {
+  margin: 0 auto;
+  max-width: 1366px;
   min-width: 320px;
-  padding-top: 70px;
   display: flex;
 
   @include vp-1199 {
     flex-direction: column;
-    padding-top: 48px;
-    padding-bottom: 52px;
   }
+}
 
-  @include vp-767 {
-    padding-top: 20px;
+.communication::after {
+  position: absolute;
+  z-index: -1;
+  content: "";
+  width: 50%;
+  height: 1px;
+  background-color: #74819c;
+  top: 0;
+  left: 50%;
+
+  @include vp-1199 {
+    display: none;
   }
 }

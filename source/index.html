@@ -602,6 +602,7 @@
         </div>
       </section>
       <div class="communication">
+      <div class="communication__wrapper">
         <section class="feedback">
           <h2>Бесплатное занятие</h2>
           <div class="feedback__form">
@@ -638,27 +639,31 @@
           </ul>
         </section>
       </div>
+    </div>
     </main>
     <footer class="footer page-footer container">
-      <a class="page-footer__logo-link">
-        <svg class="page-footer__logo-icon" width="88" height="16">
-          <use xlink:href="img/sprite.svg#logo"></use>
-        </svg>
-      </a>
+      <div class="page-footer__wrapper content-wrapper">
       <ul class="page-footer__nav" role="navigation">
-        <li class="page-footer__item">
+        <li class="page-footer__item-logo">
+          <a class="page-footer__logo-link">
+            <svg class="page-footer__logo-icon" width="88" height="16">
+              <use xlink:href="img/sprite.svg#logo"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="page-footer__item page-footer__item--services">
           <a class="page-footer__link" href="#">Услуги</a>
         </li>
-        <li class="page-footer__item">
+        <li class="page-footer__item page-footer__item--products">
           <a class="page-footer__link" href="#">Абонементы</a>
         </li>
-        <li class="page-footer__item">
+        <li class="page-footer__item page-footer__item--promotions">
           <a class="page-footer__link" href="#">Акции</a>
         </li>
-        <li class="page-footer__item">
+        <li class="page-footer__item page-footer__item--personal">
           <a class="page-footer__link" href="#">Тренеры</a>
         </li>
-        <li class="page-footer__item">
+        <li class="page-footer__item page-footer__item--schedule">
           <a class="page-footer__link" href="#">Расписание</a>
         </li>
       </ul>
@@ -688,6 +693,7 @@
           </a>
         </li>
       </ul>
+    </div>
     </footer>
   </div>
   <script src="js/vendor.min.js" type="module"></script>
