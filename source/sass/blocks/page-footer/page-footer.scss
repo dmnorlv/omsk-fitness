@@ -6,6 +6,12 @@
   justify-content: space-between;
   padding-top: 50px;
   padding-bottom: 40px;
+
+  @include vp-1199 {
+    padding-left: 44px;
+    padding-right: 39px;
+    padding-top: 48px;
+  }
 }
 
 .page-footer__nav {
@@ -14,9 +20,15 @@
   list-style-type: none;
   display: flex;
   align-items: flex-start;
-  column-gap: 40px;
+  gap: 40px;
   margin-top: -3px;
   padding-left: 7px;
+
+  @include vp-1199 {
+    gap: 30px;
+    padding-left: 4px;
+    margin-top: 1px;
+  }
 }
 
 .page-footer__logo-link {
