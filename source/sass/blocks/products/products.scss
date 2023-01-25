@@ -175,13 +175,20 @@
 .products__tab-btn-js:focus {
   color: $color-egyptian-blue;
   border-color: $color-egyptian-blue;
-  outline: none;
+  outline: 1px solid $color-crimson;
+  outline-offset: 4px;
+}
+
+.products__tab-btn-js-current:focus {
+  color: $color-sapphire;
+  border-color: $color-crimson;
 }
 
 .products__tab-btn-js:active {
   color: $color-sapphire;
   border-color: $color-sapphire;
   opacity: 0.7;
+  outline: none;
 }
 
 .products__tab-btn-js-active {

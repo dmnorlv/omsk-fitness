@@ -1,6 +1,6 @@
 .communication {
+  min-width: 320px;
   padding-top: 70px;
-  padding-bottom: 50px;
   display: flex;
 
   @include vp-1199 {

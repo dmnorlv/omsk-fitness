@@ -1,0 +1,86 @@
+.page-footer {
+  color: $color-default-white;
+  background-color: #030a1a;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding-top: 50px;
+  padding-bottom: 40px;
+}
+
+.page-footer__nav {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  align-items: flex-start;
+  column-gap: 40px;
+  min-width: 442px;
+  margin-top: -3px;
+}
+
+.page-footer__logo-link {
+  display: flex;
+}
+
+.page-footer__link {
+  color: $color-default-white;
+  display: block;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.page-footer__link:hover,
+.page-footer__link:focus {
+  text-decoration: underline;
+}
+
+.page-footer__link:focus {
+  outline: 1px solid #ffffff;
+  outline-offset: 4px;
+}
+
+.page-footer__link:active {
+  opacity: 0.7;
+  text-decoration: none;
+  outline: none;
+}
+
+.page-footer__social {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+}
+
+.page-footer__social-link {
+  display: flex;
+}
+
+.page-footer__social-link:hover .page-footer__icon-circle,
+.page-footer__social-link:focus .page-footer__icon-circle {
+  fill: #ed0233;
+}
+
+.page-footer__social-link:hover .page-footer__icon-symbol,
+.page-footer__social-link:focus .page-footer__icon-symbol {
+  fill: #ffffff;
+}
+
+.page-footer__social-link:focus {
+  outline: 1px solid #ffffff;
+  outline-offset: 3px;
+}
+
+.page-footer__social-link:active {
+  opacity: 0.7;
+  outline: none;
+}
+
+.page-footer__icon-circle {
+  fill: #ffffff;
+}
+
+.page-footer__icon-symbol {
+  fill: #030a1a;
+}

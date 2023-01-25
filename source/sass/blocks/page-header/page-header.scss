@@ -85,11 +85,16 @@
 .page-header__nav-list a:hover,
 .page-header__nav-list a:focus {
   text-decoration: underline;
-  outline: none;
+}
+
+.page-header__nav-list a:focus {
+  outline: 1px solid #ffffff;
+  outline-offset: 4px;
 }
 
 .page-header__nav-list a:active {
   text-decoration: none;
+  outline: none;
   opacity: 0.7;
 }
 
@@ -237,6 +242,11 @@
 .page-header__content-info-btn:focus {
   border-color: $color-paris-daisy;
   color: $color-paris-daisy;
+}
+
+.page-header__content-info-btn:focus {
+  outline: none;
+  text-decoration: underline;
 }
 
 .page-header__content-info-btn:active {

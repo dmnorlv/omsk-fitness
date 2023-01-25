@@ -146,11 +146,13 @@
 }
 
 .feedback__form button:focus {
+  text-decoration: underline;
   color: #ed0233;
   border-color: #ed0233;
   outline: none;
 }
 
 .feedback__form button:active {
+  text-decoration: none;
   opacity: 0.7;
 }

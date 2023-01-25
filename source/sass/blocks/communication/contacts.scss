@@ -105,6 +105,7 @@
 .contacts__item a {
   color: $color-sapphire;
   display: block;
+  width: max-content;
 }
 
 .contacts__item a:hover,
@@ -112,8 +113,15 @@
   text-decoration: underline;
 }
 
+.contacts__item a:focus {
+  outline: 1px solid #102654;
+  outline-offset: 3px;
+}
+
 .contacts__item a:active {
   opacity: 0.7;
+  text-decoration: none;
+  outline: none;
 }
 
 .contacts__item {

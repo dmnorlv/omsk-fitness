@@ -230,6 +230,10 @@
   stroke-opacity: 1;
 }
 
+.gym__video-button:focus {
+  outline: 2px solid $color-paris-daisy;
+}
+
 .gym__video-button:hover .gym__icon-play,
 .gym__video-button:focus .gym__icon-play {
   fill: $color-paris-daisy;
@@ -237,6 +241,7 @@
 
 
 .gym__video-button:active {
+  outline: none;
   opacity: 0.7;
 }
 
