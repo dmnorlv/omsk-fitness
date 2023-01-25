@@ -17,6 +17,12 @@
     padding-left: 133px;
     padding-right: 163px;
   }
+
+  @include vp-767 {
+    padding: 0 15px;
+    padding-top: 65px;
+    padding-bottom: 67px;
+  }
 }
 
 .feedback h2 {
@@ -36,6 +42,13 @@
     font-size: 42px;
     line-height: 44px;
     margin-bottom: 35px;
+  }
+
+  @include vp-767 {
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 34px;
+    margin-bottom: 37px;
   }
 }
 
@@ -63,6 +76,12 @@
     max-width: none;
     width: 100%;
     column-gap: 54px;
+  }
+
+  @include vp-767 {
+    display: flex;
+    flex-direction: column;
+    row-gap: 31px;
   }
 }
 
@@ -114,6 +133,10 @@
 
   @include vp-1199 {
     padding-top: 17px;
+  }
+
+  @include vp-767 {
+    margin-top: 9px;
   }
 }
 
