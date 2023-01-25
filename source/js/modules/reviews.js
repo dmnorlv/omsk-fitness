@@ -1,32 +1,17 @@
 import Swiper, {Navigation} from 'swiper';
 import {isSpaceKey} from '../utils/utils';
 
-const buttonPrev = document.querySelector('.personal__button-prev');
-const buttonNext = document.querySelector('.personal__button-next');
+const buttonPrev = document.querySelector('.reviews__button-prev');
+const buttonNext = document.querySelector('.reviews__button-next');
 
-const initTranersSlider = () => {
+const initReviewsSlider = () => {
   if (buttonPrev && buttonNext) {
-    const slider = new Swiper('.personal__swiper', {
+    const slider = new Swiper('.reviews__swiper', {
       modules: [Navigation],
-      rewind: true,
-      spaceBetween: 40,
       slidesPerView: 1,
-      initialSlide: 2,
       navigation: {
-        nextEl: '.personal__button-next',
-        prevEl: '.personal__button-prev',
-      },
-      breakpoints: {
-        768: {
-          slidesPerView: 2,
-          spaceBetween: 30,
-          initialSlide: 2,
-        },
-        1200: {
-          initialSlide: 0,
-          slidesPerView: 4,
-          spaceBetween: 40,
-        },
+        nextEl: '.reviews__button-next',
+        prevEl: '.reviews__button-prev',
       },
     });
 
@@ -60,5 +45,5 @@ const initTranersSlider = () => {
   }
 };
 
-export {initTranersSlider};
+export {initReviewsSlider};
 

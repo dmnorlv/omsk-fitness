@@ -2,7 +2,9 @@ import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
 import {initVideo} from './modules/gym-video';
 import {initTabs} from './modules/products-tabs';
-import {initSlider} from './modules/personal';
+import {initTranersSlider} from './modules/personal';
+import { initReviewsSlider } from './modules/reviews';
+import { initPhoneInput } from './modules/feedback';
 
 // ---------------------------------
 
@@ -22,7 +24,9 @@ window.addEventListener('DOMContentLoaded', () => {
     initModals();
     initVideo();
     initTabs();
-    initSlider();
+    initTranersSlider();
+    initReviewsSlider();
+    initPhoneInput();
   });
 });
 
