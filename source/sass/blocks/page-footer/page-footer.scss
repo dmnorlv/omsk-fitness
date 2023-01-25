@@ -15,8 +15,8 @@
   display: flex;
   align-items: flex-start;
   column-gap: 40px;
-  min-width: 442px;
   margin-top: -3px;
+  padding-left: 7px;
 }
 
 .page-footer__logo-link {
@@ -51,6 +51,7 @@
   padding: 0;
   list-style-type: none;
   display: flex;
+  gap: 11px;
 }
 
 .page-footer__social-link {
