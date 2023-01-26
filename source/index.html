@@ -102,12 +102,12 @@
                     <defs>
                       <linearGradient id="paint0_linear_7653_167" x1="19.774" y1="3.00672e-05" x2="105.785" y2="10.6444"
                         gradientUnits="userSpaceOnUse">
-                        <stop stop-color="#ED0233" />
+                        <stop stop-color="#ED0233" offset />
                         <stop offset="1" stop-color="#003EB7" />
                       </linearGradient>
                       <linearGradient id="paint1_linear_7653_167" x1="14" y1="49.52" x2="54.1858" y2="9.18415"
                         gradientUnits="userSpaceOnUse">
-                        <stop stop-color="#003D85" />
+                        <stop stop-color="#003D85" offset />
                         <stop offset="0.885417" stop-color="#B80027" />
                       </linearGradient>
                     </defs>
@@ -561,7 +561,7 @@
               <div class="swiper-slide reviews__slide">
                 <div class="reviews__slide-avatar">
                   <picture>
-                    <source srcset="img/avatar-1x.webp 1x, img/avatar-1x.webp 2x">
+                    <source media="(min-width: 320px)" srcset="img/avatar-1x.webp 1x, img/avatar-1x.webp 2x">
                     <img src="img/avatar-1x.png" srcset="img/avatar-1x.png 2x" width="80" height="80" alt="Аватарка.">
                   </picture>
                 </div>
@@ -575,7 +575,7 @@
               <div class="swiper-slide reviews__slide">
                 <div class="reviews__slide-avatar">
                   <picture>
-                    <source srcset="img/avatar-1x.webp 1x, img/avatar-1x.webp 2x">
+                    <source media="(min-width: 320px)" srcset="img/avatar-1x.webp 1x, img/avatar-1x.webp 2x">
                     <img src="img/avatar-1x.png" srcset="img/avatar-1x.png 2x" width="80" height="80" alt="Аватарка.">
                   </picture>
                 </div>
@@ -643,7 +643,7 @@
     </main>
     <footer class="footer page-footer container">
       <div class="page-footer__wrapper content-wrapper">
-      <ul class="page-footer__nav" role="navigation">
+      <ul class="page-footer__nav">
         <li class="page-footer__item-logo">
           <a class="page-footer__logo-link">
             <svg class="page-footer__logo-icon" width="88" height="16">
@@ -696,7 +696,6 @@
     </div>
     </footer>
   </div>
-  <script src="js/vendor.min.js" type="module"></script>
   <script src="js/main.min.js" type="module"></script>
 </body>
 

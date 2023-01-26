@@ -135,6 +135,11 @@
   list-style-type: none;
   display: flex;
   gap: 11px;
+
+  @include vp-1199 {
+    width: percentage(calc(97 / 691));
+    margin-left: auto;
+  }
 }
 
 .page-footer__social-link {
