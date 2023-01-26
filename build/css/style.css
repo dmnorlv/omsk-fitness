@@ -3724,6 +3724,7 @@ button,
 
   .personal {
     padding-top: 0;
+    padding-bottom: 100px;
   }
 
   .personal h2 {
@@ -3746,7 +3747,7 @@ button,
   }
 
   .advantages__wrapper {
-    padding-top: 100px;
+    padding-top: 90px;
     padding-left: 45px;
     padding-right: 45px;
   }
@@ -4003,11 +4004,6 @@ button,
 
   .page-footer__item-logo {
     margin-top: 0;
-  }
-
-  .page-footer__link {
-    font-size: 16px;
-    line-height: 18px;
   }
 
   .page-footer__social {
@@ -4592,6 +4588,7 @@ button,
   }
 
   .page-footer__nav {
+    width: auto;
     padding-left: 0;
     margin-bottom: 39px;
     display: -ms-grid;
@@ -4667,6 +4664,16 @@ button,
   .page-footer__item--schedule {
     -ms-grid-row: 5;
     -ms-grid-column: 3;
+  }
+
+  .page-footer__link {
+    font-size: 16px;
+    line-height: 18px;
+  }
+
+  .page-footer__social {
+    width: auto;
+    margin: 0;
   }
 
   .page-footer__logo-icon {
