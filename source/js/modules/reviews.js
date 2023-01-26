@@ -46,4 +46,3 @@ const initReviewsSlider = () => {
 };
 
 export {initReviewsSlider};
-
