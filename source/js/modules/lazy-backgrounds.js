@@ -18,4 +18,4 @@ const initLazyImg = () => {
   }
 };
 
-export { initLazyImg };
+export {initLazyImg};

@@ -2240,6 +2240,7 @@ button,
 .promo__info-wrapper {
   padding: 5px;
   padding-top: 85px;
+  padding-bottom: 85px;
   background-color: #ed0233;
   color: #ffffff;
   width: 43.1034482759%;
@@ -2418,8 +2419,10 @@ button,
 }
 
 .promo__photo img {
-  width: 100%;
-  height: auto;
+  height: 100%;
+  width: auto;
+  -o-object-fit: cover;
+  object-fit: cover;
 }
 
 .personal {
@@ -3814,7 +3817,8 @@ button,
   }
 
   .promo__info-wrapper {
-    padding-top: 5px;
+    padding-top: 48px;
+    padding-bottom: 48px;
     width: 43.0678466077%;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -4408,6 +4412,11 @@ button,
   .promo__photo {
     width: 100%;
     max-width: 560px;
+  }
+
+  .promo__photo img {
+    width: 100%;
+    height: auto;
   }
 
   .personal {

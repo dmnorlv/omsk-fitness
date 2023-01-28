@@ -3,9 +3,9 @@ import {initModals} from './modules/modals/init-modals';
 import {initVideo} from './modules/gym-video';
 import {initTabs} from './modules/products-tabs';
 import {initTranersSlider} from './modules/personal';
-import { initReviewsSlider } from './modules/reviews';
-import { initPhoneInput } from './modules/feedback';
-import { initLazyImg } from './modules/lazy-backgrounds';
+import {initReviewsSlider} from './modules/reviews';
+import {initPhoneInput} from './modules/feedback';
+import {initLazyImg} from './modules/lazy-backgrounds';
 
 // ---------------------------------
 
@@ -17,6 +17,7 @@ window.addEventListener('DOMContentLoaded', () => {
   iosVhFix();
 
   // Modules
+  initVideo();
   initLazyImg();
   // ---------------------------------
 
@@ -24,7 +25,6 @@ window.addEventListener('DOMContentLoaded', () => {
   // в load следует добавить скрипты, не участвующие в работе первого экрана
   window.addEventListener('load', () => {
     initModals();
-    initVideo();
     initTabs();
     initTranersSlider();
     initReviewsSlider();
