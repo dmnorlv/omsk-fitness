@@ -5,6 +5,7 @@ import {initTabs} from './modules/products-tabs';
 import {initTranersSlider} from './modules/personal';
 import { initReviewsSlider } from './modules/reviews';
 import { initPhoneInput } from './modules/feedback';
+import { initLazyImg } from './modules/lazy-backgrounds';
 
 // ---------------------------------
 
@@ -16,6 +17,7 @@ window.addEventListener('DOMContentLoaded', () => {
   iosVhFix();
 
   // Modules
+  initLazyImg();
   // ---------------------------------
 
   // все скрипты должны быть в обработчике 'DOMContentLoaded', но не все в 'load'

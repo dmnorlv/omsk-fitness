@@ -91,6 +91,12 @@
   flex-direction: column;
   align-items: center;
   height: 294px;
+  background-attachment: fixed;
+  background-color: #102654;
+  background-image: url("../img/svg/traner-background.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 
   @include vp-1199 {
     height: calc(294 / 768) * 100vw;
@@ -101,6 +107,7 @@
     padding-top: 46px;
   }
 }
+
 
 .personal__swiper-slide > h3 {
   order: 1;
@@ -119,8 +126,13 @@
 }
 
 .personal__swiper-slide:hover {
+  background-blend-mode: multiply;
   background-color: rgba(16, 38, 84, 0.89);
   box-shadow: 0 0 35px rgba(42, 59, 99, 0.17);
+}
+
+.personal__swiper-slide:hover::after {
+  display: block;
 }
 
 .personal__swiper-slide p,
@@ -177,5 +189,110 @@
 .personal__button-prev svg {
   @include vp-767 {
     margin-left: 0;
+  }
+}
+
+
+.personal__swiper-slide[data-worker-name="Пашков"].visible {
+  @media (min-width: 1200px) {
+    background-image: url("../img/desktop/trainer3-1x.webp");
+
+    @include retina {
+      background-image: url("../img/desktop/trainer3-2x.webp");
+    }
+  }
+
+  @media (min-width: 768px) {
+    background-image: url("../img/tablet/trainer2-1x.webp");
+
+    @include retina {
+      background-image: url("../img/tablet/trainer2-2x.webp");
+    }
+  }
+
+  @media (min-width: 320px) {
+    background-image: url("../img/mobile/trainer3-1x.webp");
+
+    @include retina {
+      background-image: url("../img/mobile/trainer3-2x.webp");
+    }
+  }
+}
+
+.personal__swiper-slide[data-worker-name="Кетова"].visible {
+  @media (min-width: 1200px) {
+    background-image: url("../img/desktop/trainer4-1x.webp");
+
+    @include retina {
+      background-image: url("../img/desktop/trainer4-2x.webp");
+    }
+  }
+
+  @media (min-width: 768px) {
+    background-image: url("../img/tablet/trainer1-1x.webp");
+
+    @include retina {
+      background-image: url("../img/tablet/trainer1-2x.webp");
+    }
+  }
+
+  @media (min-width: 320px) {
+    background-image: url("../img/mobile/trainer3-1x.webp");
+
+    @include retina {
+      background-image: url("../img/mobile/trainer3-2x.webp");
+    }
+  }
+}
+
+.personal__swiper-slide[data-worker-name="Павлова"].visible {
+  @media (min-width: 1200px) {
+    background-image: url("../img/desktop/trainer1-1x.webp");
+
+    @include retina {
+      background-image: url("../img/desktop/trainer1-2x.webp");
+    }
+  }
+
+  @media (min-width: 768px) {
+    background-image: url("../img/tablet/trainer1-1x.webp");
+
+    @include retina {
+      background-image: url("../img/tablet/trainer1-2x.webp");
+    }
+  }
+
+  @media (min-width: 320px) {
+    background-image: url("../img/mobile/trainer1-1x.webp");
+
+    @include retina {
+      background-image: url("../img/mobile/trainer1-2x.webp");
+    }
+  }
+}
+
+.personal__swiper-slide[data-worker-name="Лавров"].visible {
+  @media (min-width: 1200px) {
+    background-image: url("../img/desktop/trainer2-1x.webp");
+
+    @include retina {
+      background-image: url("../img/desktop/trainer2-2x.webp");
+    }
+  }
+
+  @media (min-width: 768px) {
+    background-image: url("../img/tablet/trainer2-1x.webp");
+
+    @include retina {
+      background-image: url("../img/tablet/trainer2-2x.webp");
+    }
+  }
+
+  @media (min-width: 320px) {
+    background-image: url("../img/mobile/trainer3-1x.webp");
+
+    @include retina {
+      background-image: url("../img/mobile/trainer3-2x.webp");
+    }
   }
 }

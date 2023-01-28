@@ -31,8 +31,10 @@
   padding: 0;
   list-style-type: none;
   display: flex;
+  flex-wrap: wrap;
   align-items: flex-start;
   gap: 40px;
+  row-gap: 20px;
   width: 795px;
 
   @include vp-1199 {
@@ -69,6 +71,10 @@
   @include vp-767 {
     margin-top: 4px;
   }
+}
+
+.page-footer__item {
+  // margin-left: auto;
 }
 
 @include vp-767 {
@@ -135,7 +141,10 @@
   padding: 0;
   list-style-type: none;
   display: flex;
+  flex-wrap: wrap;
   gap: 11px;
+  padding-left: 30px;
+  max-width: 330px;
 
   @include vp-1199 {
     width: percentage(calc(97 / 691));

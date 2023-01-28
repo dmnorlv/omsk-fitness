@@ -63,7 +63,9 @@
   margin: 0 auto;
   display: grid;
   grid-template-columns: minmax(percentage(calc(324 / 1010)), 324px) minmax(percentage(calc(240 / 1010)), 240px) minmax(percentage(calc(331 / 1010)), 331px);
-  grid-template-rows: 1fr 1fr;
+  grid-template-areas:
+    "place inventory parking"
+    "comfort inventory experience";
   column-gap: 60px;
   row-gap: 159px;
 
@@ -83,6 +85,7 @@
   display: flex;
   column-gap: 30px;
   margin-top: -2px;
+  height: max-content;
 
   @include vp-1199 {
     width: 47.81%;
@@ -99,9 +102,10 @@
 }
 
 .advantages__item--inventory {
+  min-height: 307px;
+  grid-area: inventory;
   position: relative;
   color: $color-default-white;
-  grid-column: 2/3;
   grid-row: 1/3;
   background-color: #1c3374;
   flex-direction: column;
@@ -135,10 +139,24 @@
 }
 
 .advantages__item--comfort {
+  grid-area: comfort;
+
   @include vp-767 {
     padding-left: 55px;
     padding-right: 55px;
   }
+}
+
+.advantages__item--experience {
+  grid-area: experience;
+}
+
+.advantages__item--parking {
+  grid-area: parking;
+}
+
+.advantages__item--place {
+  grid-area: place;
 }
 
 .advantages__description {
