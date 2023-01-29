@@ -1,6 +1,6 @@
 {
   "icons": [
-    { "src": "img/favicons/fitness-192.png", "type": "image/png", "sizes": "192x192" },
-    { "src": "img/favicons/fitness-512.png", "type": "image/png", "sizes": "512x512" }
+    { "src": "favicons/fitness-192.png", "type": "image/png", "sizes": "192x192" },
+    { "src": "favicons/fitness-512.png", "type": "image/png", "sizes": "512x512" }
   ]
 }

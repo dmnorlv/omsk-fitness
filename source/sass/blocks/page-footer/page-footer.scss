@@ -73,10 +73,6 @@
   }
 }
 
-.page-footer__item {
-  // margin-left: auto;
-}
-
 @include vp-767 {
   .page-footer__logo-link {
     grid-area: logo;
@@ -147,11 +143,12 @@
   max-width: 330px;
 
   @include vp-1199 {
-    width: percentage(calc(97 / 691));
+    width: percentage(calc(130 / 691));
     margin-left: auto;
   }
 
   @include vp-767 {
+    padding-left: 0;
     width: auto;
     margin: 0;
   }

@@ -4,10 +4,10 @@ let getInputNumbersValue = function (input) {
   return input.value.replace(/\D/g, '');
 };
 
-let onPhonePaste = function (e) {
-  let input = e.target;
+let onPhonePaste = function (evt) {
+  let input = evt.target;
   let inputNumbersValue = getInputNumbersValue(input);
-  let pasted = e.clipboardData || window.clipboardData;
+  let pasted = evt.clipboardData || window.clipboardData;
   if (pasted) {
     let pastedText = pasted.getData('Text');
     if (/\D/g.test(pastedText)) {
@@ -17,8 +17,8 @@ let onPhonePaste = function (e) {
   }
 };
 
-let onPhoneInput = function (e) {
-  let input = e.target;
+let onPhoneInput = function (evt) {
+  let input = evt.target;
   let inputNumbersValue = getInputNumbersValue(input);
   let selectionStart = input.selectionStart;
   let formattedInputValue = '';
@@ -28,7 +28,7 @@ let onPhoneInput = function (e) {
   }
 
   if (input.value.length !== selectionStart) {
-    if (e.data && /\D/g.test(e.data)) {
+    if (evt.data && /\D/g.test(evt.data)) {
       input.value = inputNumbersValue;
     }
     return;
@@ -57,10 +57,10 @@ let onPhoneInput = function (e) {
   }
   input.value = formattedInputValue;
 };
-let onPhoneKeyDown = function (e) {
-  let inputValue = e.target.value.replace(/\D/g, '');
-  if (e.keyCode === 8 && inputValue.length === 1) {
-    e.target.value = '';
+let onPhoneKeyDown = function (evt) {
+  let inputValue = evt.target.value.replace(/\D/g, '');
+  if (evt.keyCode === 8 && inputValue.length === 1) {
+    evt.target.value = '';
   }
 };
 

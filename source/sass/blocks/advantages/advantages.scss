@@ -117,6 +117,7 @@
   text-align: center;
 
   @include vp-1199 {
+    min-height: 207px;
     max-width: none;
     width: 65.59%;
     padding: 30px 120px;

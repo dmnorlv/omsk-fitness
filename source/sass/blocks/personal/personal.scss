@@ -192,6 +192,11 @@
   }
 }
 
+.personal__swiper-slide:focus {
+  outline: 3px solid #ed0233;
+  outline-offset: -3px;
+}
+
 
 .personal__swiper-slide[data-worker-name="Пашков"].visible {
   @media (min-width: 1200px) {

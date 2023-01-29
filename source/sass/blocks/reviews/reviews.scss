@@ -57,11 +57,14 @@
   box-shadow: 0 0 40px rgba(28, 51, 116, 0.2);
   padding: 62px;
   padding-top: 60px;
-  padding-bottom: 60px;
+  padding-bottom: 20px;
   display: flex;
   flex-wrap: wrap;
+  height: 245px;
+  overflow-y: auto;
 
   @include vp-767 {
+    height: 335px;
     position: relative;
     padding: 25px;
     padding-top: 48px;
@@ -70,6 +73,7 @@
 }
 
 .reviews__slide-avatar {
+  width: 80px;
   align-self: flex-start;
   flex: 0 0 auto;
   margin-top: 5px;
