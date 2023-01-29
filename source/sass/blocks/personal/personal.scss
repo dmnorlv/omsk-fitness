@@ -268,10 +268,10 @@
   }
 
   @media (min-width: 320px) {
-    background-image: url("../img/mobile/trainer1-1x.webp");
+    background-image: url("../img/mobile/trainer3-1x.webp");
 
     @include retina {
-      background-image: url("../img/mobile/trainer1-2x.webp");
+      background-image: url("../img/mobile/trainer3-2x.webp");
     }
   }
 }
