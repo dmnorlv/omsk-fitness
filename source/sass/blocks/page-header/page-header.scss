@@ -1,5 +1,5 @@
 .page-header {
-  padding-top: 30px;
+  padding-top: 37px;
   padding-bottom: 51px;
   color: $color-default-white;
   background: conic-gradient(from 130.31deg at 16.03% 39.06%, #b80027 -46.69deg, #003d85 32.24deg, #b80027 313.31deg, #003d85 392.24deg);
@@ -17,9 +17,9 @@
 
 .page-header__nav {
   display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between;
+  align-items: flex-start;
+  column-gap: 25px;
+  row-gap: 15px;
 
   @include vp-1199 {
     margin-bottom: 17px;
@@ -29,18 +29,6 @@
 .page-header__nav-js {
   @media (min-width: 1200px) {
     margin-bottom: 20px;
-  }
-}
-
-.page-header__logo-link {
-  margin-top: 10px;
-
-  @include vp-1199 {
-    margin-top: 0;
-  }
-
-  @include vp-767 {
-    margin-top: -2px;
   }
 }
 
@@ -55,10 +43,10 @@
   }
 }
 
-.page-header__nav-list {
+.page-header__links-wrapper {
   display: flex;
   flex-direction: row-reverse;
-  justify-items: flex-end;
+  justify-items: flex-start;
   flex-wrap: wrap;
   max-width: 830px;
   gap: 15px;
@@ -68,13 +56,10 @@
   padding: 0;
   list-style-type: none;
   margin-top: -8px;
+  margin-left: auto;
 }
 
-.page-header__nav-list-item-logo {
-  margin-right: auto;
-}
-
-.page-header__nav-list a {
+.page-header__links-wrapper a {
   color: $color-default-white;
   letter-spacing: 0.03em;
   font-family: $ff-alumni-sans;
@@ -96,20 +81,33 @@
   }
 }
 
-.page-header__nav-list a:hover,
-.page-header__nav-list a:focus {
+.page-header__links-wrapper a:hover,
+.page-header__links-wrapper a:focus {
   text-decoration: underline;
 }
 
-.page-header__nav-list a:focus {
+.page-header__links-wrapper a:focus {
   outline: 1px solid #ffffff;
   outline-offset: 4px;
 }
 
-.page-header__nav-list a:active {
+.page-header__links-wrapper a:active {
   text-decoration: none;
   outline: none;
   opacity: 0.7;
+}
+
+.page-header__nav .page-header__logo-link {
+  margin-left: 0;
+  margin-top: 3px;
+
+  @include vp-1199 {
+    margin-top: 0;
+  }
+
+  @include vp-767 {
+    margin-top: -2px;
+  }
 }
 
 .page-header__content {
@@ -285,7 +283,7 @@
 
 .page-header__content-img-container-js {
   @media (min-width: 1338px) {
-    margin-top: -18px;
+    margin-top: -20px;
   }
 }
 
