@@ -1,16 +1,11 @@
 .slider-btn {
   position: absolute;
-  height: 100%;
-  width: 40px;
+  height: max-content;
+  width: max-content;
   display: flex;
   top: 50%;
   transform: translateY(-50%);
   cursor: pointer;
-  border-radius: 4px;
-
-  @include vp-767 {
-    width: 25px;
-  }
 }
 
 .slider-btn svg {
@@ -26,16 +21,6 @@
 
 .slider-btn--next svg {
   rotate: 180deg;
-}
-
-.slider-btn:hover,
-.slider-btn:focus {
-  background-color: rgba(248, 249, 252, 1);
-  box-shadow: 0 2px 8px 2px rgba(34, 60, 80, 0.2);
-
-  @include vp-767 {
-    box-shadow: 0 1px 4px 1px rgba(34, 60, 80, 0.2);
-  }
 }
 
 .slider-btn:focus {
