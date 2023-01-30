@@ -3358,7 +3358,7 @@ button,
   color: #ffffff;
   background-color: #030a1a;
   padding-top: 47px;
-  padding-bottom: 40px;
+  padding-bottom: 33px;
 }
 
 .page-footer__wrapper {
@@ -4200,6 +4200,7 @@ button,
     padding-left: 38px;
     padding-right: 39px;
     padding-top: 48px;
+    padding-bottom: 42px;
   }
 
   .page-footer__nav {
@@ -4289,6 +4290,7 @@ button,
 
   .page-header__content-info-btn {
     margin-right: 0;
+    max-width: none;
     width: 100%;
   }
 

@@ -2,12 +2,13 @@
   color: $color-default-white;
   background-color: #030a1a;
   padding-top: 47px;
-  padding-bottom: 40px;
+  padding-bottom: 33px;
 
   @include vp-1199 {
     padding-left: 38px;
     padding-right: 39px;
     padding-top: 48px;
+    padding-bottom: 42px;
   }
 
   @include vp-767 {
