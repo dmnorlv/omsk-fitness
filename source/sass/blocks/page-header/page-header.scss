@@ -57,6 +57,10 @@
   list-style-type: none;
   margin-top: -8px;
   margin-left: auto;
+
+  @include vp-767 {
+    margin-top: -5px;
+  }
 }
 
 .page-header__links-wrapper a {
@@ -283,7 +287,7 @@
 
 .page-header__content-img-container-js {
   @media (min-width: 1338px) {
-    margin-top: -20px;
+    margin-top: -18px;
   }
 }
 

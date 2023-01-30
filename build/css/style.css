@@ -3355,7 +3355,7 @@ button,
   color: #ffffff;
   background-color: #030a1a;
   padding-top: 47px;
-  padding-bottom: 33px;
+  padding-bottom: 35px;
 }
 
 .page-footer__wrapper {
@@ -3624,7 +3624,7 @@ button,
 
 @media (min-width: 1338px) {
   .page-header__content-img-container-js {
-    margin-top: -20px;
+    margin-top: -18px;
   }
 }
 
@@ -4245,6 +4245,10 @@ button,
 
   .page-header__logo-icon {
     width: 69px;
+  }
+
+  .page-header__links-wrapper {
+    margin-top: -5px;
   }
 
   .page-header__links-wrapper a {
