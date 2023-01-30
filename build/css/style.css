@@ -2499,7 +2499,8 @@ button,
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  height: 294px;
+  max-height: 294px;
+  height: 21.5226939971vw;
   background-attachment: fixed;
   background-color: #102654;
   background-image: url("../img/svg/traner-background.svg");
@@ -3939,6 +3940,7 @@ button,
   }
 
   .personal__swiper-slide {
+    max-height: none;
     height: 38.28125vw;
   }
 
