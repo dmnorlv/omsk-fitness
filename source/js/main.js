@@ -6,6 +6,8 @@ import {initTranersSlider} from './modules/personal';
 import {initReviewsSlider} from './modules/reviews';
 import {initPhoneInput} from './modules/feedback';
 import {initLazyImg} from './modules/lazy-backgrounds';
+import {initBackgrounds} from './modules/personal';
+
 
 // ---------------------------------
 
@@ -20,6 +22,7 @@ window.addEventListener('DOMContentLoaded', () => {
   initNav();
   initVideo();
   initLazyImg();
+  initBackgrounds();
   // ---------------------------------
 
   // все скрипты должны быть в обработчике 'DOMContentLoaded', но не все в 'load'

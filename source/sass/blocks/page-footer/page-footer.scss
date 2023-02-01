@@ -36,23 +36,26 @@
   align-items: flex-start;
   gap: 40px;
   row-gap: 20px;
-  width: 795px;
+  min-width: 667px;
+  margin-top: -2px;
 
   @include vp-1199 {
-    width: percentage(calc(540 / 691));
+    min-width: auto;
+    width: percentage(calc(400 / 691));
     gap: 30px;
-    padding-left: 4px;
+    padding-left: 11px;
     margin-top: 1px;
   }
 
   @include vp-767 {
-    width: auto;
+    grid-auto-flow: row;
+    width: percentage(calc(239 / 290));
     padding-left: 0;
     margin-bottom: 39px;
     display: grid;
     row-gap: 22px;
-    column-gap: 75px;
-    grid-template-columns: max-content max-content;
+    column-gap: 80px;
+    grid-template-columns: repeat(auto-fill, minmax(50px, 1fr));
     grid-template-rows: max-content max-content max-content;
     grid-template-areas:
       "logo promotions"
@@ -62,20 +65,32 @@
 }
 
 .page-footer__item-logo {
+  display: none;
+
+  @include vp-767 {
+    display: block;
+    margin-top: 4px;
+  }
+}
+
+.page-footer__link-logo {
+  flex: 0 0 auto;
+  display: flex;
   margin-top: 3px;
   margin-right: auto;
+  padding-right: 30px;
 
   @include vp-1199 {
     margin-top: 0;
   }
 
   @include vp-767 {
-    margin-top: 4px;
+    display: none;
   }
 }
 
 @include vp-767 {
-  .page-footer__logo-link {
+  .page-footer__item-logo {
     grid-area: logo;
   }
 
@@ -134,6 +149,7 @@
 }
 
 .page-footer__social {
+  flex: 0 0 auto;
   margin: 0;
   padding: 0;
   list-style-type: none;
@@ -188,6 +204,8 @@
 }
 
 .page-footer__logo-icon {
+  flex: 0 0 auto;
+
   @include vp-767 {
     height: 12px;
     width: 68px;

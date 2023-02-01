@@ -9,6 +9,7 @@ const initReviewsSlider = () => {
     const slider = new Swiper('.reviews__swiper', {
       modules: [Navigation],
       slidesPerView: 1,
+      autoHeight: true,
       navigation: {
         nextEl: '.reviews__button-next',
         prevEl: '.reviews__button-prev',

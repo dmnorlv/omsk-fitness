@@ -93,8 +93,10 @@
   max-height: 294px;
   height: calc(294 / 1366) * 100vw;
   background-attachment: fixed;
-  background-color: #102654;
-  background-image: url("../img/svg/traner-background.svg");
+  background-image:
+    linear-gradient(90deg, rgba(16, 38, 84, 1) 0%, rgba(16, 38, 84, 0.89) 0%),
+    url("../img/svg/traner-background.svg");
+  background-color: rgba(16, 38, 84, 0.89);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -120,20 +122,17 @@
   line-height: 18px;
 }
 
-.personal__swiper-slide:hover > h3 {
+.personal__swiper-slide:hover > h3,
+.personal__swiper-slide:focus > h3 {
   order: 0;
   margin: 0;
   margin-bottom: 6px;
 }
 
-.personal__swiper-slide:hover {
-  background-blend-mode: multiply;
+.personal__swiper-slide:hover,
+.personal__swiper-slide:focus {
   background-color: rgba(16, 38, 84, 0.89);
   box-shadow: 0 0 35px rgba(42, 59, 99, 0.17);
-}
-
-.personal__swiper-slide:hover::after {
-  display: block;
 }
 
 .personal__swiper-slide p,
@@ -149,11 +148,14 @@
 }
 
 .personal__swiper-slide:hover p,
-.personal__swiper-slide:hover ul {
+.personal__swiper-slide:hover ul,
+.personal__swiper-slide:focus p,
+.personal__swiper-slide:focus ul {
   display: block;
 }
 
-.personal__swiper-slide:hover p {
+.personal__swiper-slide:hover p,
+.personal__swiper-slide:focus p {
   margin-bottom: 34px;
 
   @include vp-767 {

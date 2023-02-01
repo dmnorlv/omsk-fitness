@@ -57,11 +57,9 @@
   box-shadow: 0 0 40px rgba(28, 51, 116, 0.2);
   padding: 62px;
   padding-top: 60px;
-  padding-bottom: 20px;
+  padding-bottom: 60px;
   display: flex;
   flex-wrap: wrap;
-  height: 245px;
-  overflow-y: auto;
 
   @include vp-767 {
     height: 335px;
@@ -145,17 +143,21 @@
 }
 
 .reviews__button-prev {
-  left: -67px;
+  top: 123px;
+  left: -57px;
 
   @include vp-767 {
+    top: 170px;
     left: -32px;
   }
 }
 
 .reviews__button-next {
-  right: -67px;
+  top: 123px;
+  right: -57px;
 
   @include vp-767 {
+    top: 170px;
     right: -32px;
   }
 }

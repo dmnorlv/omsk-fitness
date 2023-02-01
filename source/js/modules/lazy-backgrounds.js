@@ -1,13 +1,15 @@
 
 const initLazyImg = () => {
-  let lazyBackgrounds = [].slice.call(document.querySelectorAll('.personal__swiper-slide'));
+  let lazyBackgrounds = [].slice.call(document.querySelectorAll('.personal__list'));
+  const personalCards = document.querySelectorAll('.personal__swiper-slide');
 
   if ('IntersectionObserver' in window) {
     let lazyBackgroundObserver = new IntersectionObserver(function (entries) {
       entries.forEach(function (entry) {
         if (entry.isIntersecting) {
-          entry.target.classList.add('visible');
-          lazyBackgroundObserver.unobserve(entry.target);
+          personalCards.forEach((card) => {
+            card.classList.add('visible');
+          });
         }
       });
     });

@@ -151,7 +151,6 @@
             <li class="products__tab">
               <button class="products__tab-btn products__tab-btn--month-12 btn" type="button">12 месяцев</button>
             </li>
-
           </ul>
 
           <div class="products__lists-wrapper">
@@ -315,13 +314,27 @@
                 </ul>
               </div>
               <div class="swiper-slide personal__swiper-slide" tabindex="0" data-worker-name="Пашков">
+
                 <h3>Александр Пашков</h3>
                 <p>CrossFit</p>
                 <ul class="personal__trainer-list">
                   <li class="personal__trainer-skill">Certified Level 3 Trainer</li>
-                  <li class="personal__trainer-skill">Победитель чемпионата России по CrossFit</li>
+                  <li class="personal__trainer-skill">
+                    Победитель чемпионата России по CrossFit
+                    Победитель чемпионата России по CrossFit
+                    Победитель чемпионата России по CrossFit
+                    Победитель чемпионата России по CrossFit
+                    Победитель чемпионата России по CrossFit
+                    Победитель чемпионата России по CrossFit
+                    Победитель чемпионата России по CrossFit
+                    Победитель чемпионата России по CrossFit
+                    Победитель чемпионата России по CrossFit
+                    Победитель чемпионата России по CrossFit
+                    Победитель чемпионата России по CrossFit
+                  </li>
                   <li class="personal__trainer-skill">Опыт — 6 лет</li>
                 </ul>
+
               </div>
               <div class="swiper-slide personal__swiper-slide" tabindex="0" data-worker-name="Кетова">
                 <h3>Мария Кетова</h3>
@@ -474,7 +487,9 @@
           </li>
           <li class="promotions__item">
             <h3>Месяц бесплатно</h3>
-            <p>Приведи друга, получи<br> абонемент в&nbsp;подарок</p>
+            <p>Приведи друга, получи<br> абонемент в&nbsp;подарок
+
+            </p>
             <a class="promotions__item-link" href="#">Подробнее</a>
           </li>
           <li class="promotions__item">
@@ -548,7 +563,7 @@
                   <input type="text" placeholder="Имя" name="user-name" required>
                 </div>
                 <div class="feedback__field">
-                  <input type="tel" placeholder="Телефон" data-tel-input name="user-tel" required>
+                  <input type="tel" placeholder="Телефон" pattern=".{17,}" data-tel-input name="user-tel" required>
                 </div>
                 <button type="submit">Отправить</button>
               </form>
@@ -580,6 +595,12 @@
     </main>
     <footer class="footer page-footer container">
       <div class="page-footer__wrapper content-wrapper">
+        <a class="page-footer__link-logo" aria-label="Логотип.">
+          <svg class="page-footer__logo-icon" width="88" height="16">
+            <use xlink:href="img/sprite.svg#logo"></use>
+          </svg>
+        </a>
+
         <ul class="page-footer__nav">
           <li class="page-footer__item-logo">
             <a class="page-footer__logo-link" aria-label="Логотип.">
@@ -603,8 +624,8 @@
           <li class="page-footer__item page-footer__item--schedule">
             <a class="page-footer__link" href="#">Расписание</a>
           </li>
-
         </ul>
+
         <ul class="page-footer__social">
           <li class="page-footer__social-item">
             <a class="page-footer__social-link" href="#" aria-label="Вконтакте.">
@@ -640,7 +661,6 @@
               </svg>
             </a>
           </li>
-
         </ul>
       </div>
     </footer>

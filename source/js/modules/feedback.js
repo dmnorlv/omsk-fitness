@@ -39,7 +39,7 @@ let onPhoneInput = function (evt) {
       inputNumbersValue = '7' + inputNumbersValue;
     }
     let firstSymbols = (inputNumbersValue[0] === '8') ? '8' : '+7';
-    formattedInputValue = input.value = firstSymbols + ' ';
+    formattedInputValue = input.value = firstSymbols;
     if (inputNumbersValue.length > 1) {
       formattedInputValue += '(' + inputNumbersValue.substring(1, 4);
     }
